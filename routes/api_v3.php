@@ -20,5 +20,5 @@ Route::middleware('auth:sanctum')->group(function () {
 
 
 Route::get('/subcategories', [SubcategoryController::class, 'index']);
-
+Route::apiResource('subcategories', SubcategoryController::class)->except(['privateIndex']);
 
