@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Subcategory extends Model
 {
+    /** @use HasFactory<\Database\Factories\SubcategoryFactory> */
     use HasFactory;
 
     public function category(): BelongsTo
