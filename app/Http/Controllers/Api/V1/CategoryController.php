@@ -15,6 +15,7 @@ class CategoryController extends Controller
      *     path="/categories",
      *     tags={"Categories"},
      *     summary="Get List all categories",
+     *
      *     @OA\Response(
      *          response="200",
      *          description="Succesful operation",
@@ -56,7 +57,7 @@ class CategoryController extends Controller
 
         if ($request->hasFile('photo')) {
             $file = $request->file('photo');
-            $name = Str::uuid() . '.' . $file->extension();
+            $name = Str::uuid().'.'.$file->extension();
             $file->storeAs('categories', $name, 'public');
             $data['photo'] = $name;
         }

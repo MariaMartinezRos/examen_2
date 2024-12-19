@@ -13,13 +13,10 @@ Route::get('lists/categories', [CategoryController::class,  'list']);
 Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('categories', CategoryController::class);
     Route::apiResource('products', ProductController::class);
-//    Route::get('products', [ProductController::class,  'index'])
-//        ->middleware('throttle:products');
+    //    Route::get('products', [ProductController::class,  'index'])
+    //        ->middleware('throttle:products');
     Route::get('/private-subcategories', [SubcategoryController::class, 'privateIndex']);
 });
 
-
 Route::get('/subcategories', [SubcategoryController::class, 'index']);
 Route::apiResource('subcategories', SubcategoryController::class)->except(['privateIndex']);
-
-

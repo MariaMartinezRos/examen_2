@@ -1,10 +1,8 @@
 <?php
 
 namespace App\Http\Controllers\Api\V3;
-use App\Http\Requests\StoreProductRequest;
-use App\Http\Resources\ProductResource;
+
 use App\Http\Resources\SubcategoryResource;
-use App\Models\Product;
 use App\Models\Subcategory;
 
 class SubcategoryController
@@ -14,6 +12,7 @@ class SubcategoryController
      *     path="/subcategories",
      *     tags={"Subcategories"},
      *     summary="Get List all subcategories",
+     *
      *     @OA\Response(
      *          response="200",
      *          description="Succesful operation",
@@ -62,20 +61,26 @@ class SubcategoryController
 
         return response()->json($subcategories);
     }
+
     public function store(StoreSubcategoryRequest $request)
     {
         $data = $request->all();
         $subcategory = Subcategory::create($data);
+
         return new SubcategoryResource($subcategory);
     }
+
     public function update(Subcategory $subcategory, StoreSubcategoryRequest $request)
     {
         $subcategory->update($request->all());
+
         return new SubcategoryResource($subcategory);
     }
+
     public function destroy(Subcategory $subcategory)
     {
         $subcategory->delete();
+
         //return response(null, Response::HTTP_NO_CONTENT);
         return response()->noContent();
     }

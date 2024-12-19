@@ -5,7 +5,6 @@ namespace Tests\Feature\Api;
 use App\Models\Category;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Arr;
 use Tests\TestCase;
 
@@ -25,7 +24,7 @@ class CategoryTest extends TestCase
         $response->assertStatus(200)
             ->assertJsonCount(1, 'data')
             ->assertJson([
-                'data' => [ Arr::only($category->toArray(), ['id', 'name']) ]
+                'data' => [Arr::only($category->toArray(), ['id', 'name'])],
             ]);
     }
 
