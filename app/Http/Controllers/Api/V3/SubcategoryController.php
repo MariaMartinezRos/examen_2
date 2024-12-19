@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api\V3;
 
+use App\Http\Requests\StoreSubcategoryRequest;
 use App\Http\Resources\SubcategoryResource;
 use App\Models\Subcategory;
 
