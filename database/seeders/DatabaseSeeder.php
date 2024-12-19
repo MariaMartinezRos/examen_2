@@ -27,6 +27,4 @@ class DatabaseSeeder extends Seeder
     }
 }
 
-//15 cat
-//5 subcar
-//20 prod por subcat
+//COMMIT VACIO
