@@ -262,7 +262,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: aliquam
+                  example: tenetur
                   nullable: false
               required:
                 - name
@@ -527,7 +527,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: assumenda
+                  example: non
                   nullable: false
               required:
                 - name
@@ -792,7 +792,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: et
+                  example: dolore
                   nullable: false
               required:
                 - name
@@ -852,17 +852,17 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: qui
+                  example: ratione
                   nullable: false
                 description:
                   type: string
                   description: ''
-                  example: 'Nisi dolor eaque dolorum dolores.'
+                  example: 'Et possimus officia velit.'
                   nullable: false
                 price:
                   type: integer
                   description: ''
-                  example: 2
+                  example: 19
                   nullable: false
               required:
                 - name
@@ -887,17 +887,17 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: qui
+                  example: fuga
                   nullable: false
                 description:
                   type: string
                   description: ''
-                  example: 'Voluptatem velit corporis maiores tempora quos autem.'
+                  example: 'Sequi earum deleniti voluptas animi fugit.'
                   nullable: false
                 price:
                   type: integer
                   description: ''
-                  example: 3
+                  example: 20
                   nullable: false
               required:
                 - name
@@ -1202,6 +1202,31 @@ paths:
       responses: {  }
       tags:
         - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: dolores
+                  nullable: false
+                description:
+                  type: string
+                  description: ''
+                  example: 'Ut rem quisquam odio fugiat qui voluptate hic et.'
+                  nullable: true
+                category_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the categories table.'
+                  example: odio
+                  nullable: false
+              required:
+                - name
+                - category_id
   '/api/v3/subcategories/{id}':
     put:
       summary: ''
@@ -1211,6 +1236,31 @@ paths:
       responses: {  }
       tags:
         - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: ullam
+                  nullable: false
+                description:
+                  type: string
+                  description: ''
+                  example: 'Ab earum aliquid quia fugiat assumenda.'
+                  nullable: true
+                category_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the categories table.'
+                  example: non
+                  nullable: false
+              required:
+                - name
+                - category_id
     delete:
       summary: ''
       operationId: deleteApiV3SubcategoriesId

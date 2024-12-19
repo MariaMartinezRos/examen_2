@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "7bb52147-ace1-4c7a-a0aa-4e9ac5b295ff",
+        "_postman_id": "22dc24fb-c272-4e20-8b4f-95f3dbe83ca1",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -355,7 +355,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"aliquam\"}"
+                            "raw": "{\"name\":\"tenetur\"}"
                         },
                         "description": ""
                     },
@@ -685,7 +685,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"assumenda\"}"
+                            "raw": "{\"name\":\"non\"}"
                         },
                         "description": ""
                     },
@@ -1015,7 +1015,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"et\"}"
+                            "raw": "{\"name\":\"dolore\"}"
                         },
                         "description": ""
                     },
@@ -1121,7 +1121,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"qui\",\"description\":\"Nisi dolor eaque dolorum dolores.\",\"price\":2}"
+                            "raw": "{\"name\":\"ratione\",\"description\":\"Et possimus officia velit.\",\"price\":19}"
                         },
                         "description": ""
                     },
@@ -1157,7 +1157,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"qui\",\"description\":\"Voluptatem velit corporis maiores tempora quos autem.\",\"price\":3}"
+                            "raw": "{\"name\":\"fuga\",\"description\":\"Sequi earum deleniti voluptas animi fugit.\",\"price\":20}"
                         },
                         "description": ""
                     },
@@ -1306,7 +1306,10 @@
                                 "value": "application\/json"
                             }
                         ],
-                        "body": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"dolores\",\"description\":\"Ut rem quisquam odio fugiat qui voluptate hic et.\",\"category_id\":\"odio\"}"
+                        },
                         "description": ""
                     },
                     "response": []
@@ -1339,7 +1342,10 @@
                                 "value": "application\/json"
                             }
                         ],
-                        "body": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"ullam\",\"description\":\"Ab earum aliquid quia fugiat assumenda.\",\"category_id\":\"non\"}"
+                        },
                         "description": ""
                     },
                     "response": []
