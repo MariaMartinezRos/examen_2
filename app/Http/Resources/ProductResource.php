@@ -20,7 +20,6 @@ class ProductResource extends JsonResource
             'name' => $this->name,
             'description' => $this->description,
             'price' => number_format($this->price / 100, 2),
-            'category' => CategoryResource::make($this->whenLoaded('category')),
         ];
     }
 }
