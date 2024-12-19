@@ -17,3 +17,4 @@ Route::middleware('auth:sanctum')->group(function () {
 });
 
 Route::get('/subcategories', [SubcategoryController::class, 'index']);
+Route::get('/private-subcategories', [SubcategoryController::class, 'privateIndex']);
