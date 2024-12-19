@@ -8,9 +8,9 @@
       <jdbc-url>jdbc:sqlite:C:\Users\gines\Herd\examen\database\database.sqlite</jdbc-url>
       <jdbc-additional-properties>
         <property name="vault_secret" />
+        <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
         <property name="vault_address" />
         <property name="vault_token_file" />
-        <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
       </jdbc-additional-properties>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
