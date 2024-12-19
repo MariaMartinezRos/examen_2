@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api\V3;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Resources\ProductResource;
+use App\Http\Resources\SubcategoryResource;
 use App\Models\Product;
 use App\Models\Subcategory;
 
