@@ -9,6 +9,25 @@ use App\Models\Subcategory;
 
 class SubcategoryController
 {
+    /**
+     * @OA\Get (
+     *     path="/subcategories",
+     *     tags={"Subcategories"},
+     *     summary="Get List all subcategories",
+     *     @OA\Response(
+     *          response="200",
+     *          description="Succesful operation",
+     *     ),
+     *     @OA\Response(
+     *         response="401",
+     *         description="Unauthenticated",
+     *     ),
+     *     @OA\Response(
+     *         response="403",
+     *         description="Forbidden",
+     *     )
+     * )
+     */
     public function index()
     {
         $subcategories = Subcategory::with('category')

@@ -11,6 +11,25 @@ use Illuminate\Support\Str;
 
 class ProductController extends Controller
 {
+    /**
+     * @OA\Get (
+     *     path="/products",
+     *     tags={"Products"},
+     *     summary="Get List all products",
+     *     @OA\Response(
+     *          response="200",
+     *          description="Succesful operation",
+     *     ),
+     *     @OA\Response(
+     *         response="401",
+     *         description="Unauthenticated",
+     *     ),
+     *     @OA\Response(
+     *         response="403",
+     *         description="Forbidden",
+     *     )
+     * )
+     */
     public function index()
     {
         $products = Product::with('category')->paginate(9);
